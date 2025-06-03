@@ -1,22 +1,23 @@
-# Git Guide
 ## Table of Contents
-- [Credentials](#credentials)
+- [Information](#information)
   - [Set Credentials](#set-credentials)
   - [Remove Credentials](#remove-credentials)
-- [Initialize Repository](#initialize-repository)
+  - [Initialize Repository](#initiallize-repository)
+  - [Commit Log](#commit-log)
 - [Stage](#stage)
+  - [Status](#status)
   - [Add All (Root)](#add-all-root)
   - [Add All (Current Directory)](#add-all-current-directory)
   - [Add File](#add-file)
   - [Unstage All (Current Directory)](#unstage-all-current-directory)
   - [Unstage File](#unstage-file)
-  - [Add Everything](#add-everything)
-  - [Unstage All](#unstage-all)
-  - [Unstage File](#unstage-file)
 - [Remote Repository](#remote-repository)
   - [Add URL](#add-url)
-  - [Update/Set URL](#update-set-url)
+  - [Update URL](#update-url)
   - [Pull](#pull)
+  - [Commit](#commit)
+  - [Push](#push)
+  - [Remote Delete Branch](#remote-delete-branch)
 - [Branching](#branching)
   - [Create branch](#create-branch)
   - [Rename branch](#rename-branch)
@@ -25,8 +26,9 @@
   - [Delete branch after merging](#delete-branch-after-merging)
   - [Delete branch before merging](#delete-branch-before-merging)
   - [Delete remote branch](#delete-remote-branch)
+
 ---
-## Credentials
+## Information
 ### Set Credentials
 ```
 git config --global user.name "username"
@@ -41,11 +43,19 @@ git config --global --unset user.name
 ```
 git config --global --unset user.email
 ```
-## Initiallize Repository
+### Initiallize Repository
 ```
 git init
 ```
+### Commit Log
+```
+git log
+```
 ## Stage
+### Status
+```
+git status
+```
 ### Add All (Root)
 ```
 git add -A
@@ -71,13 +81,25 @@ git reset <filename>
 ```
 git remote add origin <url>
 ```
-### Update/Set URL
+### Update URL
 ```
 git remote set-url origin <url>
 ```
 ### Pull
 ```
 git pull origin <branch>
+```
+### Commit
+```
+git commit -m "commit message"
+```
+### Push
+```
+git push origin <branch>
+```
+### Remote Delete Branch
+```
+git push origin --delete <branch>
 ```
 ## Branching
 ### Create branch
