@@ -11,6 +11,9 @@
   - [Add File](#add-file)
   - [Unstage All (Current Directory)](#unstage-all-current-directory)
   - [Unstage File](#unstage-file)
+- [Stash](#Stash)
+  - [Stash Push](#stash-push)
+  - [Stash Pop](#stash-pop)
 - [Remote Repository](#remote-repository)
   - [Add URL](#add-url)
   - [Update URL](#update-url)
@@ -75,6 +78,15 @@ git reset .
 ### Unstage File
 ```
 git reset <filename>
+```
+## Stash
+### Stash Push
+```
+git stash push -u
+```
+### Stash Pop
+```
+git stash pop
 ```
 ## Remote Repository
 ### Add URL
